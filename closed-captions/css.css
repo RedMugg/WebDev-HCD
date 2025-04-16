@@ -25,14 +25,15 @@ Feel free to adjust the defaults to your needs.
 	opacity: 0;
 }
 .voice1 {
-	font-style: bold;
+	font-style: normal;
 }
 .voice2 {
-	font-weight: normal;
+	font-weight: lighter;
 }
 
 .voice3 {
 	font-weight: lighter;
+	font-style: italic;
 }
 
 /* **********************************************
@@ -63,12 +64,29 @@ Sounds.
 	--mood_color: 156, 47, 25, 1;
 }
 
-
 /* Effects */
 .effect1 {
-	border: solid;
-	border-width: 10px;
-	border-color: red;
+	outline: solid;
+	outline-width: 4px;
+	outline-color: rgba(var(--mood_color));
+}
+
+.effect2 {
+	outline: solid;
+	outline-width: 10px;
+	outline-color: rgba(var(--mood_color));
+}
+
+.effect3 {
+	outline: solid;
+	outline-width: 4px;
+	outline-color: rgba(var(--mood_color));
+}
+
+.effect4 {
+	outline: solid;
+	outline-width: 10px;
+	outline-color: rgba(var(--mood_color));
 }
 
 /* **********************************************
