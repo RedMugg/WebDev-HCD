@@ -4,7 +4,7 @@ function onYouTubeIframeAPIReady() {
 	player = new YT.Player('video-placeholder', {
 		width: 600,
 		height: 400,
-		videoId: 'vrP-_T-h9YM',
+		videoId: 'sV05a_vbqK0?si=ef5ViKK6JT0Wz4PE',
 		playerVars: {
 			color: 'white',
 			//start: 
@@ -54,6 +54,11 @@ function updateTimerDisplay(){
 		sTimes(i,sounds[i],t);
 		i++;
 	}
+	var i = 0;
+	while( i < effects.length) {
+		eTimes(i,effects[i],t);
+		i++;
+	}
 // Change 136.1 to the length of your own video in seconds
 	if ( t < 136.1) {
 		setTimeout(() => {
@@ -86,6 +91,17 @@ function sTimes(num,soundStarts,curT) {
 	}
 	if( curT < soundStarts && b.classList.contains(soundClass)) {
 		b.classList.remove(soundClass);
+	}
+}
+
+function eTimes(num,effectStarts,curT) {
+	var effectClass = 'effect' + num;
+	var v = document.querySelector('#video-mask');
+	if( curT > effectStarts && !v.classList.contains(effectClass)) {
+		v.classList.add(effectClass);
+	}
+	if( curT < effectStarts && v.classList.contains(effectClass)) {
+		v.classList.remove(effectClass);
 	}
 }
 
