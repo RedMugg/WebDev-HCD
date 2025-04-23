@@ -1,5 +1,6 @@
 :root {
 	--mood_color: 67, 175, 191, 1;
+	--monster_color: white;
 }
 
 /* **********************************************
@@ -14,19 +15,26 @@ Feel free to adjust the defaults to your needs.
 	transition: .05s;
 	position: absolute;
 	font-size: 2em;
+	left: 50%;
+	transform: translateX(-50%);
+
 }
+
 #closed-captions .on {
 	opacity: 1;
 	text-align: center;
 	margin: auto;
 }
+
 #closed-captions .off {
 	transition: .2s;
 	opacity: 0;
 }
+
 .voice1 {
 	font-style: normal;
 }
+
 .voice2 {
 	font-weight: lighter;
 }
@@ -34,6 +42,12 @@ Feel free to adjust the defaults to your needs.
 .voice3 {
 	font-weight: lighter;
 	font-style: italic;
+}
+
+.monsters {
+	font-weight: bold;
+	color: black;
+	background: rgba(var(--mood_color));
 }
 
 /* **********************************************
@@ -45,7 +59,7 @@ Sounds.
 
 /* The moment the class .sound1 is added to the body, the background is yellow */
 .sound0 {
-	background: radial-gradient(circle,rgba(var(--mood_color)) 0%, rgba(33, 33, 33, 1) 100%);
+	background: radial-gradient(circle, rgba(var(--mood_color)) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
 .sound1 {
@@ -78,15 +92,44 @@ Sounds.
 }
 
 .effect3 {
+	animation: enterRight 1.5s ease-in-out forwards;
+}
+
+.effect4 {
 	outline: solid;
 	outline-width: 4px;
 	outline-color: rgba(var(--mood_color));
 }
 
-.effect4 {
+.effect5 {
 	outline: solid;
 	outline-width: 10px;
 	outline-color: rgba(var(--mood_color));
+}
+
+/* Animations */
+@keyframes enterRight {
+	0% {
+		box-shadow: 0 0 0 var(--monster_color);
+	}
+
+	20% {
+		box-shadow: 0 20px 40px var(--monster_color);
+	}
+	50% {
+		box-shadow: 0 0px 100px var(--monster_color);
+	}
+
+	80% {
+		box-shadow: 0 -20px 40px var(--monster_color);
+	}
+
+	99% {
+		box-shadow: 0 0 40px var(--monster_color);
+	}
+	100% {
+		box-shadow: 0 0 0 var(--monster_color);
+	}
 }
 
 /* **********************************************
@@ -104,9 +147,11 @@ body {
 	font-family: "Nunito Sans", sans-serif;
 	transition: all .3s ease;
 }
+
 #video-container {
 	margin: auto;
 }
+
 #video-mask {
 	aspect-ratio: 16/8;
 	display: grid;
@@ -121,5 +166,3 @@ iframe {
 	height: 53.33333333vw;
 	margin-top: -0.35vw;
 }
-
-
