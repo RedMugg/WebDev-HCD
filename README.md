@@ -1,83 +1,74 @@
-# Web Typography, 2020/2021
+# HCD - Web Development - 2025 - Stephan Kok - 500803769
 
-Als je doof bent, of als je om een andere reden geen geluid kunt horen, dan mis je veel informatie als je een film kijkt. Knisperende voetstappen, langzaam aanzwellende muziek, nerveus getik op een deur, je hoort het natuurlijk allemaal niet. Nu bestaat er zoiets als *closed caption*, wat een type ondertiteling is waarbij ook dingen als omgevingsgeluiden en de muziek beschreven worden. Hierdoor krijgt een kijker die informatie wel binnen.
+## De Opdracht
 
-Alleen wordt die auditieve informatie nogal neutraal beschreven. Het geluid van huilend persoon zou bijvoorbeeld beschreven kunnen worden als *snikgeluid op de achtergrond*. En iemand die lacht zou geschreven kunnen worden als *iemand lacht.* Heel neutraal, bijna zakelijk, en bovendien allebei in precies hetzelfde neutrale lettertype. Terwijl het toch echt over twee heel verschillende emoties gaat. 
+Bij dit project is het de bedoeling dat wij een prototype maken voor iemand met een beperking binnen een bepaalde situatie of context.
 
-Dat kan visueel sterker. 
+Ik was ingedeeld bij Darice, zij is doof en heeft een aandoening waardoor haar gezichtsveld wat beperkter is.
+Darice kijkt graag films en "luistert" wel eens naar podcasts.
+De opdracht was nu dan ook uiteindelijk om voor één van deze twee te kiezen en hier een prototype voor te maken wat het gebruik voor Darice aangenamer of inclusiever maakt.
 
-En dat gaan jullie doen.
+<hr>
 
-## Leerdoelen
+## Brainstormen/Kennismaken
 
-- Je kan de kennis over vormgeving die je hebt opgedaan tijdens de minor technisch toepassen met behulp van CSS
-- Je kan verborgen nuance uit een audiotrack overtuigend vertalen naar visuele (typografische) beelden
-- Je kan je typografische keuzes onderbouwen.
-- Je hebt de exclusive design principles gebruikt.
+Ik begon met een idee uitwerken voor de podcasts.
+Hier probeerde ik met kleur aan te geven welke persoon aan het praten was en met de verschillende soundwaves het volume of ernst van de gesproken tekst.
+Uiteindelijk ben ik toch van de podcast af gestapt en heb ik voor de film gekozen na de eerste kennismaking met Darice.
 
-## Oplevering
+<hr>
 
-Je levert een werkende versie op, gemaakt met HTML, CSS en JavaScript. Deze staat op Github. In een duidelijke readme documenteer en onderbouw je je ontwerpkeuzes. Je developmentgeschiedenis is terug te vinden op GitHub.
+## Week 1
 
-Je levert ook een *screen recording* met audio op van je fragment. Dit is een video van de definitieve versie, gemaakt van jouw browserscherm.
+Nadat ik de keuze gemaakt had om voor de film te gaan wist ik al snel dat ik iets met de achtegrond van de video speler wilde doen in combinatie met kleur.
+Ik was toen nog niet uit over waar ik de kleuren voor zou gebruiken dus begon ik breed met een kleur te koppelen aan de sfeer. (Zoals ik dat ervaarde)
+Voordat ik met de kleuren begon heb ik wel nog eerst wat opzetjes gemaakt voor de verschillende manieren die ik kon bedenken om dialoog te tonen op/bij het beeld.
 
-De beoordeling is mondeling en volgt [de rubric uit het beoordelingsformulier](web-typografie-beoordeling.pdf).
+### Testronde 1
 
-## Typografische restricties
+De bovengenoemde opzetjes heb ik bij de eerste testronde aan Darice laten zien.
+Hier kwamen hele handige punten naar voren zoals:
+- Namen zijn fijn bij degene die de tekst zegt
+- Als iets duidelijk in beeld is heeft het geen caption nodig
+- Tekst het liefst in het midden onderaan het beeld
+- Geluiden zouden extra aangegeven kunnen worden d.m.v. symbole/animaties
 
-Je *moet* een van deze twee opties kiezen, en je keuze moet je onderbouwen. In je readme staat een uitleg over je overwegingen om de ene of de andere restrictie te kiezen.
+<hr>
 
-### Optie 1: Systeemfont
+## Week 2
 
-De eerste optie is dat je gebruik maakt van het zogenaamde *systeemfont* van degene die naar jouw werk kijkt. Dit font verschilt per operating system, en het verschilt soms zelfs per versie van het operating system. Het is ook aan te passen door de gebruiker zelf. 
+Na de feedback gekregen te hebben ben ik gelijk aan de slag gegaan met de code die Vasillis in teams had doorgestuurd. Deze code bevatte een makkelijke manier van captions koppelen aan timestamps van een youtube video. Hierdoor werd het een stuk makkelijker om een clip van de film (Odd Thomas) te gebruiken voor de opdracht.
+Nadat ik deze code geimplementeerd had voor mijn gekozen clip ben ik verder gegaan met de sfeer combineren met de kleur van de achtergrond. Ik heb hier gebruik gemaakt van een gradient achter de video die met verschillende kkleuren aangeeft wat de huidige sfeer is. (Blauw -> rustig, oranje/rood->spanning)
 
-Je hebt dus geen controle over welk lettertype er precies gebruikt wordt. Het levert dus een onzeker, en beperkt typografisch palet op. Je hebt geen *light* versies, of *extrabold*. En ook geen serif en sans-serif versie van dezelfde familie. In dit geval heb je alleen de beschikking over normal, **bold** en _italic_. Dit heeft natuurlijk ook zijn voordelen!
+### Testronde 2
 
-### Optie 2: Brenner
+Ik heb de clip en het gebruik van de achtergrond aan Darice getoont en daar kwamen de volgende punten naar voren:
+- Probeer met meer animnaties te werken
+- Let op de toon van de tekst in de clip
+- Met muziek kan je ook andere animaties gebruiken. (Zie regen -> verdrietig etc. etc.)
+- Gebruik een font zonder schreef (Sans-serif)
+- Maak de kleuren wat heftiger/meer aanwezig
 
-Je kan er ook voor kiezen om gebruik te maken van de complete Brenner familie. Dit is een zeer uitgebreid en uiterst flexibel font. [Hier kan je je verdiepen in dit font](https://www.typotheque.com/blog/brenner_an_unusual_typeface_family_with_distinct_voices). Als je kiest voor dit font dan heb je de beschikking over een *sans serif*, een *condensed*, een *serif*, een *monotype*, een *slab*, een *display* en een *script* versie. En veel van deze versies hebben varianten van *light* tot *bold*, en allemaal zowel *bold* als *italic*.
+## Week 3
 
-Met Brenner zijn er natuurlijk veel en veel meer mogelijkheden dan met systeemfonts. Dat kan zowel een voordeel als een nadeel zijn. 
+Ik heb de tips van Darice opgevolgd en de kleuren wat feller en aanweziger gemaakt. Ook heb ik de keuze gemaakt om een Outline toe te voegen op het moment dat de spanning aanwezig is. Dit om nog duidelijker te maken dat er een wisseling is van rustige sfeer naar een wat meer gespannen sfeer. Ook heb ik hier een glow effect toegevoegd  wanneer een monster van achter(buiten) het scherm in duikt. Ik probeer met deze gloed de dynamische geluiden een beetje weer te geven.
+Ook heb ik een ander font gebruikt en probeer ik met subtiele veranderingen in het font aan te geven wie er aan het woord is. (Schuingedrukt, vetgedrukt etc.)
 
-Voor een overzicht, zie [de brenner.pdf](brenner.pdf).
+### Testronde 3/ Laatste test
 
-## Het fragment
+Hier kwamen wat belangrijke punte naar voren:
+- De verschillende manieren van weergeven wie wat zegt is niet duidelijk genoeg
+- Let op het contrast van de teksten, sommigen zijn niet heel duidelijk leesbaar
+- Het geluid wat de monsters maken is te zacht uitgebeeld voor wat het betekent.
 
-Ik heb een fragment voorbereid. Het gaat om twee scenes uit *Blade Runner 2049*. De captions staan in de HTML, en ze verschijnen in sync met de video. [Kijk maar](closed-captions/index.html).
+<hr>
 
-### De captions
+## Laatste stappen
 
-De captions staan in de html, in het bestand index.html. Je kan aan elke paragraaf eventueel een of meer classes toevoegen. Bijvoorbeeld `voice1` of `voice2 soft`. Classes voeg je handmatig toe in de html.
+Ik heb als antwoord op de laatste ronde het lettertype van het geluid van de monsters aangepast naar een font die wat ruwer is. Ook heb ik een animatie weten toe te voegen die een beetje de toon van het gegrom van de monsters afbeeld. Hiernaast heb ik nog bij elke caption een achtergrond toegevoegd om te zorgen dat de leesbaarheid standaard goed is. (Witte tekst op een Zwarte achtergrond) Bij de geluiden van de monsters heb ik juist gebruik gemaakt van dezelfde kleur als de achtegrond gloed en de outline van de video. Dit heb ik gedaan om duidelijk te maken dat die effecten onderdeel zijn van het gegrom van de monsters. 
 
-Met JavaScript worden er een paar dingen extra gedaan: 
+## Wat wil ik nog doen als ik meer tijd had?
 
-- er wordt aan elke paragraaf een unieke class toegevoegd (`p0`, `p1`, etc)
-- Elk woord wordt in een aparte `span` gezet. Hierdoor kan je elk woord apart stylen, en eventueel ook [na elkaar laten verschijnen](https://github.com/cmda-minor-vid/web-typography-18-19/blob/master/closed-captions/css.css#L41).
-
-### Tijdens het afspelen
-
-Tijdens het afspeelen wordt er een class `on` op de caption gezet als hij moet verschijnen, en een class `off` als hij klaar is. *Zowel class `on` als class `off` blijft op de caption staan!*
-
-De timimg van de captions kan je aanpassen in [closed-captions/captions.js](closed-captions/captions.js).
-
-Er verschijnen ook classes op de body op momenten dat er geluiden worden afgespeeld, zoals `sound1` en `sound2`. Je kan geluiden toevoegen in [closed-captions/sounds.js](closed-captions/sounds.js).
-
-*let op,* de geluiden zijn niet compleet, dit zal je zelf moeten aanvullen.
-
-## Een eigen fragment (afgeraden, uitgebreide onderbouwing is nodig)
-
-Je kan er ook voor kiezen om een eigen, *beter* fragment te gebruiken. Dit wordt afgeraden. De tijd die je besteedt aan het zoeken naar dat fragment kan je beter besteden aan het werken aan de opdracht. Bovendien blijkt dat er vaak fragmenten worden gekozen die niet goed voldoen aan de opdracht. Als je een ander fragment kiest dan *moet* je dit goed onderbouwd voorleggen aan je docent. De deadline hiervoor is vrijdagochtend in de eerste week.
-
-### Waar moet je op letten bij het kiezen van een eigen fragment.
-Lees de opdracht nog eens goed door. Waar gaat het ook al weer precies om? 
-
-Voor een goede onderbouwing van je keuze voor een ander fragment moet je deze vragen in elk geval beantwoorden:
-
-- Welke informatie zit er in de audio die echt niet zichtbaar is?
-- Welke rol speelt de audio in het fragment?
-- Werkt de scene nog zonder geluid?
-- Waarom is dit fragment beter dan het aangeboden fragment?
-
-Je kan dan de nodige HTML en JavaScript genereren door gebruik te maken van [caption generator](https://cmda-minor-vid.github.io/web-typography-18-19/generator/) (in Google Chrome). 
-
-Als je de closed captions wil bewerken dan kan je een tool zoals [Amber Script](https://www.amberscript.com/en) gebruiken. Daar kan je exporteren als `.srt`, en die kan je weer door de generator halen.
+Ik zou graag nog willen uitzoeken wat goede verschillende fonts zijn om verschillende mensen af te beelden of aan te geven.
+Ook zou ik wat meer willen experimenteren met de gloed animaties om aan te geven waar een geluid zich bevind in het beeld. (Zoals het binnenspringende monster halverwege de clip).
+Als laatse zou ik nog willen kijken naar de subtiele (of juist niet!) manier van muziek aantonen. Nu heb ik specifiek voor de muziek nog niet iets heel indrukwekkends of uitgebreids.
