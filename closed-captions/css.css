@@ -18,6 +18,9 @@ Feel free to adjust the defaults to your needs.
 	left: 50%;
 	transform: translateX(-50%);
 
+	padding: 5px;
+	border-radius: 5px;
+
 }
 
 #closed-captions .on {
@@ -33,21 +36,28 @@ Feel free to adjust the defaults to your needs.
 
 .voice1 {
 	font-style: normal;
+	background-color: black;
 }
 
 .voice2 {
 	font-weight: lighter;
+	background-color: black;
 }
 
 .voice3 {
 	font-weight: lighter;
 	font-style: italic;
+	background-color: black;
 }
 
 .monsters {
 	font-weight: bold;
-	color: black;
 	background: rgba(var(--mood_color));
+
+	font-family: "Creepster", system-ui;;
+	font-weight: lighter;
+	
+	animation: growlShake .3s infinite;
 }
 
 /* **********************************************
@@ -116,6 +126,7 @@ Sounds.
 	20% {
 		box-shadow: 0 20px 40px var(--monster_color);
 	}
+
 	50% {
 		box-shadow: 0 0px 100px var(--monster_color);
 	}
@@ -127,8 +138,31 @@ Sounds.
 	99% {
 		box-shadow: 0 0 40px var(--monster_color);
 	}
+
 	100% {
 		box-shadow: 0 0 0 var(--monster_color);
+	}
+}
+
+@keyframes growlShake {
+	0% {
+		transform: rotate(0deg)
+	}
+
+	25% {
+		transform: rotate(.5deg)
+	}
+
+	50% {
+		transform: rotate(-1deg)
+	}
+
+	75% {
+		transform: rotate(.5deg)
+	}
+
+	100% {
+		transform: rotate(0deg)
 	}
 }
 
